@@ -37,7 +37,6 @@ public class Main {
         System.out.println("Velocidade: " + bolaBasquete.velocidade);
 
 
-        // ======================================
 
         // =============Exercicio 2==============
 
@@ -61,7 +60,35 @@ public class Main {
         System.out.printf("Altura: %.2f%n", pessoa2.altura);
         System.out.println("Peso: " + pessoa2.peso);
 
+
+
+        // =============Exercicio 3==============
+
+        //instanciando objetos
+        ContaCorrente conta1 = new ContaCorrente("Joao", 985641);
+        ContaCorrente conta2 = new ContaCorrente("Pedro", 451278);
+        ContaCorrente conta3 = new ContaCorrente("Amanda", 564823);
+
+        //atribuindo valor ao atributo saldoConta
+        conta1.saldoConta = 1450;
+        conta3.saldoConta = 5890;
+
+        //imprimindo objetos
+        System.out.println("\n===Conta 1===\n");
+        System.out.println("Correntista: " + conta1.nomeDoCorrentista);
+        System.out.println("Conta: " + conta1.numeroConta);
+        System.out.println("Saldo: " + conta1.saldoConta);
+        System.out.println("\n===Conta 2===\n");
+        System.out.println("Correntista: " + conta2.nomeDoCorrentista);
+        System.out.println("Conta: " + conta2.numeroConta);
+        System.out.println("Saldo: " + conta2.saldoConta);
+        System.out.println("\n===Conta 3===\n");
+        System.out.println("Correntista: " + conta3.nomeDoCorrentista);
+        System.out.println("Conta: " + conta3.numeroConta);
+        System.out.println("Saldo: " + conta3.saldoConta);
+
         // ======================================
+
     }
 
 }
