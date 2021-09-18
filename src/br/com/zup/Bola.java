@@ -1,4 +1,4 @@
-package br.com.zup.Exercicio1;
+package br.com.zup;
 
 public class Bola {
 

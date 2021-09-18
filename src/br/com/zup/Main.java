@@ -1,7 +1,5 @@
-package br.com.zup.Exercicio1;
+package br.com.zup;
 
-
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class Main {
 
