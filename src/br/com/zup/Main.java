@@ -1,6 +1,9 @@
 package br.com.zup;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -101,6 +104,7 @@ public class Main {
         Pais pais4 = new Pais("Colômbia", "45,6 milhões", "1.138.914 km²");
 
         //adicionando os paises a lista
+
         continente.add("Pais: " + pais1.nomePais + " ||Tamanho Populção: " + pais1.tamanhoPopulação + " ||Extensão Territorial: " + pais1.extensãoTerritorial);
         continente.add("Pais: " + pais2.nomePais + " ||Tamanho Populção: " + pais2.tamanhoPopulação + " ||Extensão Territorial: " + pais2.extensãoTerritorial);
         continente.add("Pais: " + pais3.nomePais + " ||Tamanho Populção: " + pais3.tamanhoPopulação + " ||Extensão Territorial: " + pais3.extensãoTerritorial);
@@ -113,6 +117,7 @@ public class Main {
         int opçãoSelecionada = 0;
 
         while (exibirMenu) {
+
             System.out.println("\n===América do Sul===\n");
             System.out.println("1- Exibir lista de países do continente.");
             System.out.println("2- Sair.");
