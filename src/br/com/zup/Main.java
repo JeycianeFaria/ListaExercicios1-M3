@@ -3,6 +3,7 @@ package br.com.zup;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -104,7 +105,6 @@ public class Main {
         Pais pais4 = new Pais("Colômbia", "45,6 milhões", "1.138.914 km²");
 
         //adicionando os paises a lista
-
         continente.add("Pais: " + pais1.nomePais + " ||Tamanho Populção: " + pais1.tamanhoPopulação + " ||Extensão Territorial: " + pais1.extensãoTerritorial);
         continente.add("Pais: " + pais2.nomePais + " ||Tamanho Populção: " + pais2.tamanhoPopulação + " ||Extensão Territorial: " + pais2.extensãoTerritorial);
         continente.add("Pais: " + pais3.nomePais + " ||Tamanho Populção: " + pais3.tamanhoPopulação + " ||Extensão Territorial: " + pais3.extensãoTerritorial);
