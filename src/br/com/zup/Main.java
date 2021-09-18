@@ -87,7 +87,58 @@ public class Main {
         System.out.println("Conta: " + conta3.numeroConta);
         System.out.println("Saldo: " + conta3.saldoConta);
 
-        // ======================================
+
+
+        // =============Exercicio Level Up==============
+
+        //criando List
+        List<String> continente = new ArrayList<>();
+
+        //intanciando os paises
+        Pais pais1 = new Pais("Argentina", "44,5 milhões", "2.780.400 km²");
+        Pais pais2 = new Pais("Brasil", "213 milhões", "8.514.876 km²");
+        Pais pais3 = new Pais("Chile", "18 milhões", "756.945 km²");
+        Pais pais4 = new Pais("Colômbia", "45,6 milhões", "1.138.914 km²");
+
+        //adicionando os paises a lista
+        continente.add("Pais: " + pais1.nomePais + " ||Tamanho Populção: " + pais1.tamanhoPopulação + " ||Extensão Territorial: " + pais1.extensãoTerritorial);
+        continente.add("Pais: " + pais2.nomePais + " ||Tamanho Populção: " + pais2.tamanhoPopulação + " ||Extensão Territorial: " + pais2.extensãoTerritorial);
+        continente.add("Pais: " + pais3.nomePais + " ||Tamanho Populção: " + pais3.tamanhoPopulação + " ||Extensão Territorial: " + pais3.extensãoTerritorial);
+        continente.add("Pais: " + pais4.nomePais + " ||Tamanho Populção: " + pais4.tamanhoPopulação + " ||Extensão Territorial: " + pais4.extensãoTerritorial);
+
+        //instanciando o Scanner
+        Scanner leitor = new Scanner(System.in);
+
+        boolean exibirMenu = true;
+        int opçãoSelecionada = 0;
+
+        while (exibirMenu) {
+            System.out.println("\n===América do Sul===\n");
+            System.out.println("1- Exibir lista de países do continente.");
+            System.out.println("2- Sair.");
+            System.out.println("Digite a opção desejada: ");
+            opçãoSelecionada = leitor.nextInt();
+
+            if (opçãoSelecionada == 1) {
+
+                for (String exibirLista : continente) {
+                    System.out.println(exibirLista);
+                }
+
+            } else if (opçãoSelecionada == 2) {
+
+                exibirMenu = false;
+                System.out.println("Até a proxima!");
+
+            } else {
+
+                System.out.println("Opção selecionda inválida!");
+
+            }
+
+        }
+
+        // =============================================
 
     }
 
