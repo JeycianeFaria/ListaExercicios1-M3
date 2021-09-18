@@ -93,6 +93,36 @@ public class Main {
 
 
 
+        // =============Exercicio 4==============
+
+        //instanciando objetos
+        Carro carro1 = new Carro("Golf GTI", "Volkswagen", 4);
+        Carro carro2 = new Carro("Uno Mille", "Fiat", 4);
+        Carro carro3 = new Carro("Fusca", "Volkswagen", 2 );
+
+        //atribuindo valor ao atributo potencia.
+        carro2.potencia = 1.0;
+        carro3.potencia = 1.6;
+
+        //imprimindo objetos
+        System.out.println("\n===Carro 1===\n");
+        System.out.println("Modelo: " + carro1.modelo);
+        System.out.println("Marca: " + carro1.marca);
+        System.out.println("Quantidade de Portas: " + carro1.qtdPortas);
+        System.out.println("Potencia: " + carro1.potencia);
+        System.out.println("\n===Carro 2===\n");
+        System.out.println("Modelo: " + carro2.modelo);
+        System.out.println("Marca: " + carro2.marca);
+        System.out.println("Quantidade de Portas: " + carro2.qtdPortas);
+        System.out.println("Potencia: " + carro2.potencia);
+        System.out.println("\n===Carro 3===\n");
+        System.out.println("Modelo: " + carro3.modelo);
+        System.out.println("Marca: " + carro3.marca);
+        System.out.println("Quantidade de Portas: " + carro3.qtdPortas);
+        System.out.println("Potencia: " + carro3.potencia);
+
+
+
         // =============Exercicio Level Up==============
 
         //criando List
