@@ -126,19 +126,24 @@ public class Main {
         // =============Exercicio Level Up==============
 
         //criando List
-        List<String> continente = new ArrayList<>();
+        //List<String> continente = new ArrayList<>();
+        List<Pais> continente = new ArrayList<>();
 
         //intanciando os paises
-        Pais pais1 = new Pais("Argentina", "44,5 milhões", "2.780.400 km²");
-        Pais pais2 = new Pais("Brasil", "213 milhões", "8.514.876 km²");
-        Pais pais3 = new Pais("Chile", "18 milhões", "756.945 km²");
-        Pais pais4 = new Pais("Colômbia", "45,6 milhões", "1.138.914 km²");
+        Pais pais1 = new Pais("Argentina", 44.5, 2780400);
+        Pais pais2 = new Pais("Brasil", 213, 8514876);
+        Pais pais3 = new Pais("Chile", 18 , 756945);
+        Pais pais4 = new Pais("Colômbia", 45.5,1138914);
 
         //adicionando os paises a lista
-        continente.add("Pais: " + pais1.nomePais + " ||Tamanho Populção: " + pais1.tamanhoPopulação + " ||Extensão Territorial: " + pais1.extensãoTerritorial);
+        /*continente.add("Pais: " + pais1.nomePais + " ||Tamanho Populção: " + pais1.tamanhoPopulação + " ||Extensão Territorial: " + pais1.extensãoTerritorial);
         continente.add("Pais: " + pais2.nomePais + " ||Tamanho Populção: " + pais2.tamanhoPopulação + " ||Extensão Territorial: " + pais2.extensãoTerritorial);
         continente.add("Pais: " + pais3.nomePais + " ||Tamanho Populção: " + pais3.tamanhoPopulação + " ||Extensão Territorial: " + pais3.extensãoTerritorial);
-        continente.add("Pais: " + pais4.nomePais + " ||Tamanho Populção: " + pais4.tamanhoPopulação + " ||Extensão Territorial: " + pais4.extensãoTerritorial);
+        continente.add("Pais: " + pais4.nomePais + " ||Tamanho Populção: " + pais4.tamanhoPopulação + " ||Extensão Territorial: " + pais4.extensãoTerritorial);*/
+        continente.add(pais1);
+        continente.add(pais2);
+        continente.add(pais3);
+        continente.add(pais4);
 
         //instanciando o Scanner
         Scanner leitor = new Scanner(System.in);
@@ -156,8 +161,8 @@ public class Main {
 
             if (opçãoSelecionada == 1) {
 
-                for (String exibirLista : continente) {
-                    System.out.println(exibirLista);
+                for (Pais paises : continente) {
+                    System.out.println("Pais: " + paises.nomePais + " ||Tamanho Populção: " + paises.tamanhoPopulação + " ||Extensão Territorial: " + paises.extensãoTerritorial + " ||Densidade: " + paises.densidade());
                 }
 
             } else if (opçãoSelecionada == 2) {
